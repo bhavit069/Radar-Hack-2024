@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="lg:pb-0 sticky top-0" style="background-color: #2B303B; z-index: 9999;">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+            <div class="flex-shrink-0">
+                <a href="#" title="" class="flex">
+                <img class="w-auto h-8 lg:h-10" src="images/logo.svg" alt="" />
+                </a>
+            </div>
+        
+            <!-- Hamburger button -->
+            <button id="menu-toggle" type="button" class="inline-flex p-2 text-white transition-all duration-200 rounded-md lg:hidden focus:bg-[#232323] hover:bg-[#232323]">
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <svg id="menu-open-icon" class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                </svg>
+        
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <svg id="menu-close-icon" class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        
+            <!-- Get started button for lg+ -->
+            <!-- <div>
+                <a href="#" title="" class="items-center justify-center hidden px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700" role="button">
+                    Become a Seller
+                </a>
+                <a href="#" title="" class="items-center justify-center hidden px-4 py-3 ml-2 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700" role="button">
+                    Connect Wallet
+                </a>
+            </div> -->
+            <a href="#" title="" class="items-center justify-center hidden px-4 py-3 ml-10 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700" role="button">
+                Connect Wallet
+            </a>
+            </nav>
+        
+            <!-- Mobile menu (hidden by default) -->
+            <nav id="mobile-menu" class="hidden pt-4 pb-6 rounded-md lg:hidden">
+            <div class="flow-root">
+                <div class="flex flex-col px-6 -my-2 space-y-1 nav-links">
+                <a href="#" title="" class="inline-flex py-2 font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Features</a>
+                <a href="#" title="" class="inline-flex py-2 font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Solutions</a>
+                <a href="#" title="" class="inline-flex py-2 font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Resources</a>
+                <a href="#" title="" class="inline-flex py-2 font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Pricing</a>
+                </div>
+            </div>
+        
+            <div class="px-6 mt-6">
+                <a href="#" title="" class="inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700" role="button">
+                Get started now
+                </a>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="layout-main bg py-6" style="display: block; padding-top: 1.3rem;">
+        <div class="w-full flex justify-center items-center py-6">
+            <div class="w-full max-w-6xl flex flex-wrap lg:flex-nowrap gap-x-6">
+                
+                <div class="w-full lg:w-1/2 p-8 rounded-xl flex flex-col justify-center" style="background-color: #2B303B;">
+                    <h1 class="text-3xl mb-4" style="color: #CACFD8;">
+                        Buy products directly from twitter
+                    </h1>
+            
+                    <p class="medium-info-desc mb-6">
+                        Shop with confidence and ease, knowing your transactions are secure and transparent.
+                    </p>
+            
+                    <div class="px-6 sm:px-0">
+                        <button type="button" class="w-25 text-white w-full  bg-[#2D47EB] hover:bg-[#2D47EB]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2" style="max-width: 14rem;">
+                            <!-- <svg class="mr-2 -ml-1 w-4 h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                                <path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                            </svg> -->
+                                
+                            Sign up with Google
+                            <div></div>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="login-hero w-full lg:w-1/2 flex justify-center items-center bg-blue-700 p-6 rounded-xl">
+                    <img src="images/hero - 1.png" alt="Payment Illustration" class="rounded-lg w-full h-full object-cover">
+                </div>                  
+            </div>
+        </div>
+
+        <div class="restrictions-1 flex flex-wrap w-full py-6 info-section rounded-xl">
+            <!-- Left Text Box -->
+            <div class="w-full lg:w-1/2 p-9 highlight-text flex" style="flex-direction: column;">
+                <div>
+                    <h1 class="text-3xl mb-4">Discover Products Seamlessly with Blinks</h1>
+                      <p class="medium-info-desc" style="margin-bottom: 1.5rem;">Explore a wide range of unique items from trusted sellers, powered by Solana's secure and decentralized platform.</p>
+                </div>
+    
+                <div class="mt-auto">
+                    <div class="flex">
+                        <div class="small-info-ico">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="26" height="26" rx="5" fill="#FACC14"></rect>
+                                <path d="M11.2922 11.0189L12.5912 8.26523C12.629 8.18554 12.6871 8.11851 12.7591 8.07166C12.8311 8.02482 12.914 8 12.9987 8C13.0833 8 13.1662 8.02482 13.2382 8.07166C13.3102 8.11851 13.3683 8.18554 13.4062 8.26523L14.7052 11.0189L17.6092 11.4631C17.6929 11.4754 17.7717 11.5121 17.8366 11.5692C17.9015 11.6264 17.9497 11.7015 17.976 11.7861C18.0022 11.8708 18.0053 11.9615 17.9849 12.0478C17.9645 12.1342 17.9215 12.2128 17.8607 12.2747L15.7597 14.4168L16.2557 17.4431C16.3192 17.8316 15.9292 18.1274 15.5957 17.9442L12.9987 16.5147L10.4012 17.9442C10.0682 18.1279 9.67815 17.8316 9.74165 17.4426L10.2377 14.4163L8.13665 12.2742C8.07615 12.2123 8.03335 12.1337 8.01314 12.0475C7.99292 11.9613 7.99609 11.8708 8.02229 11.7864C8.04849 11.7019 8.09666 11.6269 8.16134 11.5699C8.22601 11.5128 8.3046 11.476 8.38815 11.4637L11.2922 11.0189Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>	
+                        </div>
+                        <p class="">Rated <strong>4.9/5</strong> from over <strong>600</strong> reviews.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Sub-Boxes -->
+            <div class="w-full lg:w-1/2 p-4 grid md:grid-cols-2 grid-cols-1 gap-1">
+                  <div class="p-4 text-white">
+                    <div class="small-info-header flex">
+                        <div class="small-info-ico">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="8" fill="#E9EFFD"></rect>
+                                <path d="M37.5 12.5C37.5 14.1415 37.1767 15.767 36.5485 17.2835C35.9203 18.8001 34.9996 20.1781 33.8388 21.3388C32.6781 22.4996 31.3001 23.4203 29.7835 24.0485C28.267 24.6767 26.6415 25 25 25C23.3585 25 21.733 24.6767 20.2165 24.0485C18.6999 23.4203 17.3219 22.4996 16.1612 21.3388C15.0004 20.1781 14.0797 18.8001 13.4515 17.2835C12.8233 15.767 12.5 14.1415 12.5 12.5L25 12.5H37.5Z" fill="#2563EB"></path>
+                                <path d="M12.5 37.5C12.5 35.8585 12.8233 34.233 13.4515 32.7165C14.0797 31.1999 15.0004 29.8219 16.1612 28.6612C17.3219 27.5004 18.6999 26.5797 20.2165 25.9515C21.733 25.3233 23.3585 25 25 25C26.6415 25 28.267 25.3233 29.7835 25.9515C31.3001 26.5797 32.6781 27.5004 33.8388 28.6612C34.9996 29.8219 35.9203 31.1999 36.5485 32.7165C37.1767 34.233 37.5 35.8585 37.5 37.5L25 37.5L12.5 37.5Z" fill="#2563EB"></path>
+                            </svg>
+                        </div>
+                        <h3>Instant Purchase</h3>
+                    </div>
+                    <p class="small-info-desc">Complete your orders in seconds with no delays.</p>
+                  </div>
+                  <div class="p-4 text-white">
+                    <div class="small-info-header flex">
+                        <div class="small-info-ico">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="8" fill="#E9EFFD"></rect>
+                                <rect x="10" y="10.5001" width="16.5" height="16.5" rx="5" fill="#2563EB"></rect>
+                                <path d="M23.5 28.5C23.5 25.7386 25.7386 23.5 28.5 23.5H35C37.7614 23.5 40 25.7386 40 28.5V35C40 37.7614 37.7614 40 35 40H28.5C25.7386 40 23.5 37.7614 23.5 35V28.5Z" fill="#2563EB"></path>
+                            </svg>	
+                        </div>
+                        <h3>Secure Transactions</h3>
+                    </div>
+                    <p class="small-info-desc">Funds are held securely in escrow and only released when orders are confirmed as shipped.</p>
+                  </div>
+                  <div class="p-4 text-white">
+                    <div class="small-info-header flex">
+                        <div class="small-info-ico">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="8" fill="#E9EFFD"></rect>
+                                <path d="M12.2605 11.1558L25.3802 9.84385L38.5 24.9316L25.3802 24.9316L12.2605 11.1558Z" fill="#2563EB"></path>
+                                <path d="M12.2605 25.6257L25.3802 24.3138L38.5 39.4015L25.3802 39.4015L12.2605 25.6257Z" fill="#2563EB"></path>
+                            </svg>
+                        </div>
+                        <h3>Share & Save</h3>
+                    </div>
+                    <p class="small-info-desc">Easily share your favorite products with friends using Blinks, and unlock special discounts.</p>
+                  </div>
+                  <div class="p-4 text-white">
+                    <div class="small-info-header flex">
+                        <div class="small-info-ico">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="50" rx="8" fill="#E9EFFD"></rect>
+                                <path d="M25 9L35.8253 22.5H14.1747L25 9Z" fill="#2563EB"></path>
+                                <path d="M25 23L35.8253 36.5H14.1747L25 23Z" fill="#2563EB"></path>
+                            </svg>							
+                        </div>
+                        <h3>Effortless Tracking</h3>
+                    </div>
+                    <p class="small-info-desc">Stay updated with real-time order tracking and notifications directly on your dashboard.</p>
+                  </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+    <!-- Footer -->
+    <section class="py-10 sm:pt-16 lg:pt-24" style="background-color: #2c303b;">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+            <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+                <img class="w-auto h-9" src="images/logo.svg" alt="" />
+
+                <p class="text-base leading-relaxed text-gray-600 mt-7">Simplifies e-commerce by providing an easy way to create and share your store using Solana Blinks. Secure, fast, and reliable for both buyers and sellers.</p>
+
+                <ul class="flex items-center space-x-3 mt-9">
+                    <li>
+                        <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sellers -->
+            <div>
+                <p class="text-sm font-semibold tracking-widest uppercase" style="color: #808389;">Sellers</p>
+
+                <ul class="mt-6 space-y-4 foot-links">
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Sign In </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Dashboard </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Orders </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Products </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Blinks </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Users -->
+            <div>
+                <p class="text-sm font-semibold tracking-widest uppercase" style="color: #808389;">Users</p>
+
+                <ul class="mt-6 space-y-4 foot-links">
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Sign In </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Orders </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Cart </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                <p class="text-sm font-semibold tracking-widest uppercase" style="color: #808389;">Subscribe to newsletter</p>
+
+                <form action="#" method="POST" class="mt-6">
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
+                    </div>
+
+                    <button type="submit" class="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="mt-16 mb-10 border-gray-200" />
+
+        <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved by Buy In A Blink</p>
+    </div>
+    </section>
+</body>
+<script src="scripts.js"></script>
+</html>
