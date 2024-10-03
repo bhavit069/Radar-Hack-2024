@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Layout with Tailwind CSS</title>
+	<title>Landing Page</title>
 	<!-- Tailwind CSS CDN -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-
+	<link rel="stylesheet" href="styles.css">
 	<script type="module">
 	import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
@@ -49,105 +49,10 @@
 	keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
 	keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
 	</script>
-	<style>
-		body {
-			font-family: 'Lato';
-			background: #232323;
-		}
 
-		.info-section {
-			min-height: 22rem;
-			height: fit-content;
-			background: #2B303B;
-		}
-
-		.bg {
-			background: #232323;
-		}
-
-		.small-info-header {
-			width: 100%;
-			height: fit-content;
-			/* background-color: pink; */
-			margin-bottom: 0.5rem;
-			flex-wrap: nowrap;
-		}
-
-		.small-info-ico {
-			width: 1.8rem;
-			height: 1.8rem;
-			margin-right: 1rem;
-		}
-
-		.small-info-header h3 {
-			position: relative;
-			font-size: 20px;
-			top: -1px;
-		}
-
-		.small-info-desc {
-			color: #808389;
-			font-size: 16.4px;
-		}
-
-		.medium-info-desc {
-			color: #808389;
-			font-size: 18px;
-		}
-
-		/* h1 */
-		.highlight-text {
-			color: #CACFD8;
-		}
-
-		.feature-section {
-			height: 15rem;
-		}
-
-		.layout-main {
-			width: 1400px;
-			max-width: 100%;
-			height: fit-content;
-			margin: auto;
-		}
-
-		.list-text {
-			position: relative;
-			left: 10px;
-			color: #808389;
-		}
-
-		.restrictions-1 {
-			max-width: 1152px;
-			margin: auto;
-			
-		}
-
-		.testimonial-block {
-			background-color: #2B303B !important;
-		}
-
-		.testimonial-text-cont {
-			color: #808389 !important;
-		}
-
-		/* */
-		.link-text {
-			color: #2D47EB;
-		}
-
-		.foot-links li a {
-			color: #CACFD8CC;
-
-		}
-
-		.nav-links a {
-			color: #CACFD8CC;
-		}
-	</style>
 </head>
 <body>
-<header class="pb-6 lg:pb-0 sticky top-0" style="background-color: #2B303B; z-index: 9999;">
+<header class="lg:pb-0 sticky top-0" style="background-color: #2B303B; z-index: 9999;">
 	<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<!-- lg+ -->
 		<nav class="flex items-center justify-between h-16 lg:h-20">
@@ -195,7 +100,8 @@
 		</nav>
 	</div>
 </header>
-	  
+
+<!-- hero -->
 <div style="background-color: #232323;">
 	<section class="bg-[#232323] py-10 sm:py-16 lg:py-24">
 		<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -394,13 +300,13 @@
 		</div>
 	</div>
 
-	<section>
+	<section class="testimonials-section">
 		<!-- Testimonials -->
 		<!-- mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24 -->
 		<div class="max-w-[1152px] px-4 py-6 sm:px-6 lg:me-0 lg:py-6 lg:pe-0 lg:ps-8 xl:py-6" style="margin: auto;">
 			<div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
 			<div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" style="text-align: left !important; color: #d2d2d2 !important;">
+				<h2 class="text-3xl tracking-tight text-gray-900 sm:text-4xl" style="text-align: left !important; color: #d2d2d2 !important;">
 					Loved by our customers
 				</h2>
 	
@@ -672,7 +578,7 @@
 
                 <ul class="mt-6 space-y-4 foot-links">
                     <li>
-                        <a href="#" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Sign In </a>
+                        <a href="login.html" title="" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Sign In </a>
                     </li>
 
                     <li>
@@ -735,19 +641,5 @@
 
 
 </body>
-<script>
-	const menuToggle = document.getElementById('menu-toggle');
-	const mobileMenu = document.getElementById('mobile-menu');
-	const menuOpenIcon = document.getElementById('menu-open-icon');
-	const menuCloseIcon = document.getElementById('menu-close-icon');
-  
-	menuToggle.addEventListener('click', () => {
-	  // Toggle the hidden class to show/hide the mobile menu
-	  mobileMenu.classList.toggle('hidden');
-  
-	  // Toggle the icons
-	  menuOpenIcon.classList.toggle('hidden');
-	  menuCloseIcon.classList.toggle('hidden');
-	});
-  </script>  
+<script src="scripts.js"></script>
 </html>
